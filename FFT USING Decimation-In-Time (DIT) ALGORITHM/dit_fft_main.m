@@ -1,0 +1,37 @@
+clc;
+close all;
+clear all;
+tic;
+fprintf('Date & Time:');
+Date= Datestr(now);
+disp(Date);
+fprintf('DIT-FFT');
+fprintf('\n\n');
+N=input('Enter the length of the input sequence:');
+for i=1:N
+re(i)=input('Enter the real part of the time domain sequence:');
+im(i)=input('Enter the imaginary part of the time domain sequence:');
+end
+[re1,im1]=DITFFT(re,im,N);
+subplot(3,2,1);
+stem(0:N-1,re);
+xlabel('time index n------>');
+ylabel('amplitude');
+title('input real sequence');
+subplot(3,2,2);
+stem(0:N-1,im);
+xlabel('time index n------>');
+ylabel('amplitude');
+title('input imaginary sequence');
+subplot(3,2,5);
+stem(0:N-1,re1);
+xlabel('frequency------>');
+ylabel('amplitude');
+title('output real sequence');
+subplot(3,2,6);
+stem(0:N-1,im1);
+xlabel('frequency------>');
+ylabel('amplitude');
+title('output imaginary sequence');
+disp(re1);
+disp(im1);
