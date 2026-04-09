@@ -63,11 +63,13 @@ To write MATLAB programs:
 
 ### Magnitude Response:
 
-![Magnitude Response](magnitude_plot.png)
+![Magnitude Response]<img width="577" height="427" alt="image" src="https://github.com/user-attachments/assets/97c55a1d-95e3-48ee-b6f3-3ab604ec8f6d" />
+
 
 ### Phase Response:
 
-![Phase Response](phase_plot.png)
+![Phase Response]<img width="640" height="462" alt="image" src="https://github.com/user-attachments/assets/4859a263-3d58-4cf8-9768-942e95d224c2" />
+
 
 ---
 
