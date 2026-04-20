@@ -1,0 +1,13 @@
+close all;
+ clear all;
+ clc;
+b=[1];
+a=[1,-1,0.9];
+ n=[-20:120];
+ t=0:0.1:2*pi;
+ x=sin(t);
+ s=filter(b,a,x);
+ stem(t,s);
+ title('sinusoidal response');
+ xlabel('n');
+ ylabel('s(n)');
